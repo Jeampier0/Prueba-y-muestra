@@ -53,7 +53,6 @@ const menuItems: MenuItem[] = [
     category: 'Gourmet'
   }
 ];
-
 function MenuSection({ addToCart }: MenuSectionProps) {
   return (
     <>
