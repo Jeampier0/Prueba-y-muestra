@@ -44,10 +44,10 @@ function Contact() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Visítanos
+            Encuéntranos
           </h2>
           <p className="text-xl text-gray-600">
-            Estamos listos para servirte
+            Estamos listos para atenderte con el mejor sabor
           </p>
         </div>
 
@@ -58,10 +58,10 @@ function Contact() {
                 <MapPin className="h-6 w-6 text-red-600" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Dirección</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Nuestras Ubicaciones</h3>
                 <p className="text-gray-600">
-                  📌 Jirón Nepeña 148 - Nuevo Chimbote<br />
-                  📌 Plaza Santander - Chimbote
+                  📌 <strong>Local 1:</strong> Jirón Nepeña 148 - Nuevo Chimbote<br />
+                  📌 <strong>Local 2:</strong> Plaza Santander - Chimbote
                 </p>
               </div>
             </div>
@@ -71,9 +71,12 @@ function Contact() {
                 <Phone className="h-6 w-6 text-red-600" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Teléfono</h3>
-                <p className="text-gray-600">938 107 077<br />o<br />
-                  929 300 157</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Teléfonos</h3>
+                <p className="text-gray-600">
+                  📞 938 107 077<br />
+                  📞 929 300 157<br />
+                  <span className="text-sm text-gray-500 mt-1 block">Llamadas y WhatsApp</span>
+                </p>
               </div>
             </div>
 
@@ -82,8 +85,10 @@ function Contact() {
                 <Mail className="h-6 w-6 text-red-600" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Instagram</h3>
-                <p className="text-gray-600">clarenztrattoria</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Síguenos</h3>
+                <p className="text-gray-600">
+                  📱 Instagram: <a href="https://instagram.com/mesacentral" className="text-red-600 hover:underline">@mesacentral</a>
+                </p>
               </div>
             </div>
 
@@ -92,26 +97,29 @@ function Contact() {
                 <Clock className="h-6 w-6 text-red-600" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Horario</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Horario de Atención</h3>
                 <p className="text-gray-600">
-                  Lunes - Viernes: 11:00 AM - 10:00 PM<br />
-                  Sábado - Domingo: 12:00 PM - 11:00 PM
+                  🕐 Lunes - Viernes: 11:00 AM - 10:00 PM<br />
+                  🕐 Sábado - Domingo: 12:00 PM - 11:00 PM
                 </p>
               </div>
             </div>
           </div>
 
           <div className="bg-gradient-to-br from-red-50 to-orange-50 p-8 rounded-2xl">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">
-              Haz tu Reserva
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              Haz tu Pedido o Reserva
             </h3>
+            <p className="text-gray-600 mb-6">
+              Contáctanos para hacer tu pedido o reservar una mesa. ¡Te atenderemos con gusto!
+            </p>
             <form onSubmit={handleSubmit} className="space-y-4">
               <input
                 type="text"
                 name="nombre"
                 value={formData.nombre}
                 onChange={handleChange}
-                placeholder="Nombre"
+                placeholder="Tu nombre completo"
                 required
                 className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500"
               />
@@ -120,7 +128,7 @@ function Contact() {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                placeholder="Email"
+                placeholder="Tu correo electrónico"
                 required
                 className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500"
               />
@@ -129,7 +137,7 @@ function Contact() {
                 name="telefono"
                 value={formData.telefono}
                 onChange={handleChange}
-                placeholder="Teléfono"
+                placeholder="Tu teléfono"
                 required
                 className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500"
               />
@@ -158,7 +166,7 @@ function Contact() {
                 name="comentarios"
                 value={formData.comentarios}
                 onChange={handleChange}
-                placeholder="Comentarios adicionales"
+                placeholder="¿Algún comentario especial o preferencia?"
                 rows={3}
                 className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500"
               />
@@ -166,7 +174,7 @@ function Contact() {
                 type="submit"
                 className="w-full py-3 bg-red-600 text-white rounded-full font-semibold hover:bg-red-700 transition"
               >
-                Enviar Reserva
+                Enviar Solicitud
               </button>
             </form>
           </div>

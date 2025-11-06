@@ -54,13 +54,13 @@ function App() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
               <ChefHat className="h-8 w-8 text-red-600" />
-              <span className="text-2xl font-bold text-gray-900">🍕Clarenz Trattoria🍕</span>
+              <span className="text-2xl font-bold text-gray-900">Mesa Central</span>
             </div>
             <div className="hidden md:flex space-x-8">
-              <a href="#inicio" className="text-gray-700 hover:text-red-600 transition">Inicio</a>
-              <a href="#menu" className="text-gray-700 hover:text-red-600 transition">Menú</a>
-              <a href="#nosotros" className="text-gray-700 hover:text-red-600 transition">Nosotros</a>
-              <a href="#contacto" className="text-gray-700 hover:text-red-600 transition">Contacto</a>
+              <a href="#inicio" className="text-gray-700 hover:text-red-600 transition font-medium">Inicio</a>
+              <a href="#menu" className="text-gray-700 hover:text-red-600 transition font-medium">Menú</a>
+              <a href="#nosotros" className="text-gray-700 hover:text-red-600 transition font-medium">Nosotros</a>
+              <a href="#contacto" className="text-gray-700 hover:text-red-600 transition font-medium">Contacto</a>
             </div>
             <button
               onClick={() => setShowCart(true)}
@@ -91,7 +91,7 @@ function App() {
 
       <footer className="bg-gray-900 text-white py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p>&copy; 2025 Clarenz Trattoria. Todos los derechos reservados.</p>
+          <p>&copy; 2025 Mesa Central. Todos los derechos reservados.</p>
         </div>
       </footer>
     </div>

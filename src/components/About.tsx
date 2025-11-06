@@ -7,16 +7,17 @@ function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
-              Pasión por las Pizzas
+              Sabores Auténticos del Perú
             </h2>
             <p className="text-lg text-gray-600">
-              Desde 2020, hemos estado sirviendo las pizzas más deliciosas
-              de la ciudad. Nuestra misión es simple: crear experiencias
-              inolvidables con cada bocado.
+              En Mesa Central te ofrecemos lo mejor de la gastronomía peruana.
+              Nuestra misión es llevarte un viaje culinario por la costa, la sierra
+              y la fusión oriental, todo en un solo lugar.
             </p>
             <p className="text-lg text-gray-600">
-              Usamos solo ingredientes 100% frescos, mozzarella importada, y
-              nuestras masas artesanales horneadas en horno de leña cada día.
+              Contamos con chefs especializados en cada tipo de cocina: criolla 
+              tradicional, platos marinos frescos del día, y la mejor fusión chifa.
+              Cada plato es preparado con dedicación y los ingredientes más frescos.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-6">
@@ -26,10 +27,10 @@ function About() {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  Ingredientes Premium
+                  Sazón Casera
                 </h3>
                 <p className="text-gray-600">
-                  Mozzarella importada, tomates frescos y especias italianas
+                  Recetas tradicionales y secretos familiares pasados de generación en generación
                 </p>
               </div>
             </div>
@@ -39,10 +40,10 @@ function About() {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  Horno de Leña
+                  Ingredientes Frescos
                 </h3>
                 <p className="text-gray-600">
-                  Pizzas cocidas al horno tradicional a 350°C
+                  Mariscos del día, carnes de primera y verduras frescas del mercado
                 </p>
               </div>
             </div>
@@ -52,10 +53,10 @@ function About() {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  Calidad Garantizada
+                  3 Cocinas en Una
                 </h3>
                 <p className="text-gray-600">
-                  Premiados como la mejor pizzería 2024
+                  Comida criolla, marina y oriental - la variedad que necesitas
                 </p>
               </div>
             </div>
